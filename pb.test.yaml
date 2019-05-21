@@ -1,0 +1,6 @@
+
+- name: Show all variable
+  hosts: localhost
+  gather_facts: no
+  tasks:
+   - debug: var=hostvars[inventory_hostname]
